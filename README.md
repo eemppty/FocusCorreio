@@ -118,6 +118,43 @@ automatic-rewards:
 
 No plugin do dragao, use `delivery-mode: CORREIO` ou `delivery-mode: AUTO`.
 
+## Usar com TitansBattle
+
+O `FocusCorreio` tambem pode receber recompensas do `TitansBattle`.
+
+No arquivo do evento do TitansBattle, coloque a recompensa como comando. O comando deve enviar o premio para o correio do vencedor:
+
+```text
+correio adicionar %player% MATERIAL QUANTIA Nome da Recompensa
+```
+
+Exemplo para o primeiro lugar:
+
+```yaml
+prizes:
+  FIRST:
+    member.commands.enabled: true
+    member.commands.command_list:
+      - "correio adicionar %player% DIAMOND 16 Premio do Gladiador"
+      - "correio adicionar %player% TRIPWIRE_HOOK 1 Chave do Evento"
+```
+
+Depois de editar o evento, recarregue o TitansBattle:
+
+```text
+/tb reload
+```
+
+Quando o evento acabar, o vencedor abre:
+
+```text
+/correio
+```
+
+Guia completo com exemplos para primeiro, segundo, terceiro lugar, killer e eventos em grupo:
+
+- [Usar com TitansBattle](docs/TITANSBATTLE.md)
+
 Leia tambem:
 
 - [Guia de instalacao](docs/INSTALACAO.md)
