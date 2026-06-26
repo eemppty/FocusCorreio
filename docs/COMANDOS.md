@@ -37,3 +37,15 @@
 /correio listar Steve
 /correio limpar Steve
 ```
+
+## Usando em Outros Plugins
+
+Plugins de evento que executam comandos pelo console podem enviar recompensas para o correio usando:
+
+```text
+correio adicionar %player% DIAMOND 16 Premio do Evento
+```
+
+Para TitansBattle, veja o guia completo:
+
+- [Usar com TitansBattle](TITANSBATTLE.md)

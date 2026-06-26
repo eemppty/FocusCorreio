@@ -124,6 +124,7 @@ Leia tambem:
 - [Comandos e permissoes](docs/COMANDOS.md)
 - [Como personalizar o menu](docs/MENU.md)
 - [Integracao com dragao](docs/INTEGRACAO-DRAGAO.md)
+- [Usar com TitansBattle](docs/TITANSBATTLE.md)
 - [Publicar no GitHub](docs/PUBLICAR-GITHUB.md)
 
 ## Build
