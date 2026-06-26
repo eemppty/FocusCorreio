@@ -8,7 +8,9 @@ A ideia e simples: quando o TitansBattle declarar um vencedor, ele executa um co
 
 - `FocusCorreio` instalado e carregando sem erro.
 - `TitansBattle` instalado e com o evento ja criado.
-- Permissao de console para executar o comando `/correio adicionar`.
+- O TitansBattle precisa executar o comando pelo console.
+- Jogadores comuns devem ter somente `focuscorreio.usar`.
+- Nao entregue `focuscorreio.admin` ou `focuscorreio.*` para jogadores comuns.
 
 ## Comando Base
 
@@ -27,6 +29,8 @@ correio adicionar %player% NETHERITE_INGOT 2 Campeao do TitansBattle
 ```
 
 Na configuracao do TitansBattle, os comandos normalmente ficam sem `/` no comeco, igual `give %player% diamond 1`.
+
+O jogador vencedor nao precisa de permissao para enviar recompensas. Ele so precisa de `focuscorreio.usar` para abrir o menu e resgatar o premio.
 
 ## Onde Configurar
 

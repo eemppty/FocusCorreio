@@ -47,8 +47,12 @@ Para jogadores:
 focuscorreio.usar
 ```
 
+Com essa permissao o jogador consegue abrir o `/correio`, navegar pelo menu e resgatar os itens.
+
 Para staff:
 
 ```text
 focuscorreio.admin
 ```
+
+Nao entregue `focuscorreio.admin` ou `focuscorreio.*` para jogadores comuns. Essa permissao permite enviar recompensas para outros jogadores e deve ficar apenas com staff, console e plugins de evento.

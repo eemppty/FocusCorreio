@@ -1,5 +1,24 @@
 # Comandos e Permissoes
 
+## Regra de Seguranca
+
+Jogadores comuns devem ter somente:
+
+```text
+focuscorreio.usar
+```
+
+Essa permissao permite abrir o `/correio`, navegar pelas paginas do menu e resgatar recompensas.
+
+Nao entregue estas permissoes para jogadores comuns:
+
+```text
+focuscorreio.admin
+focuscorreio.*
+```
+
+`focuscorreio.admin` e apenas para staff, console e plugins de evento. Ela permite enviar recompensas para outros jogadores.
+
 ## Jogador
 
 | Comando | Permissao | Descricao |
@@ -45,6 +64,8 @@ Plugins de evento que executam comandos pelo console podem enviar recompensas pa
 ```text
 correio adicionar %player% DIAMOND 16 Premio do Evento
 ```
+
+O comando acima deve ser executado pelo console ou pelo proprio plugin de evento. O jogador nao precisa, e nao deve receber, permissao de envio.
 
 Para TitansBattle, veja o guia completo:
 

@@ -11,8 +11,8 @@ commands:
     aliases: [mailbox, recompensas]
 permissions:
   focuscorreio.usar:
-    description: Permite abrir e resgatar o correio.
+    description: Permite abrir o correio, navegar no menu e resgatar recompensas.
     default: true
   focuscorreio.admin:
-    description: Permite enviar, listar, limpar e recarregar correios.
+    description: Permite enviar recompensas, listar, limpar, recarregar e configurar o dragao. Nao entregue para jogadores comuns.
     default: op

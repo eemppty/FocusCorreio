@@ -41,6 +41,10 @@ plugins/FocusCorreio/
 
 ## Comandos
 
+Jogadores comuns devem receber somente `focuscorreio.usar`. Essa permissao deixa abrir o menu, trocar de pagina pelo menu e resgatar itens.
+
+Nao entregue `focuscorreio.admin` nem `focuscorreio.*` para jogadores comuns. Essa permissao e apenas para staff, console e plugins de evento, porque permite enviar recompensas para outros jogadores.
+
 | Comando | Permissao | O que faz |
 | --- | --- | --- |
 | `/correio` | `focuscorreio.usar` | Abre o menu do correio. |
@@ -122,7 +126,7 @@ No plugin do dragao, use `delivery-mode: CORREIO` ou `delivery-mode: AUTO`.
 
 O `FocusCorreio` tambem pode receber recompensas do `TitansBattle`.
 
-No arquivo do evento do TitansBattle, coloque a recompensa como comando. O comando deve enviar o premio para o correio do vencedor:
+No arquivo do evento do TitansBattle, coloque a recompensa como comando. Esse comando deve ser executado pelo console do evento, nao por jogador comum:
 
 ```text
 correio adicionar %player% MATERIAL QUANTIA Nome da Recompensa
@@ -150,6 +154,8 @@ Quando o evento acabar, o vencedor abre:
 ```text
 /correio
 ```
+
+O jogador vencedor nao precisa de permissao de envio. Ele precisa apenas de `focuscorreio.usar` para abrir o menu e resgatar.
 
 Guia completo com exemplos para primeiro, segundo, terceiro lugar, killer e eventos em grupo:
 
